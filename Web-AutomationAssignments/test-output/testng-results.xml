@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-06T11:19:21 IST" name="Default suite" finished-at="2022-05-06T11:22:17 IST" duration-ms="175882">
+    <groups>
+    </groups>
+    <test started-at="2022-05-06T11:19:21 IST" name="Default test" finished-at="2022-05-06T11:22:17 IST" duration-ms="175882">
+      <class name="com.sgtetsing.dataprovider.Createuser">
+        <test-method signature="launchBrowser()[pri:1, instance:com.sgtetsing.dataprovider.Createuser@4efc180e]" started-at="2022-05-06T11:19:21 IST" name="launchBrowser" finished-at="2022-05-06T11:20:39 IST" duration-ms="77463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="navigate()[pri:2, instance:com.sgtetsing.dataprovider.Createuser@4efc180e]" started-at="2022-05-06T11:20:39 IST" name="navigate" finished-at="2022-05-06T11:21:00 IST" duration-ms="20912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:3, instance:com.sgtetsing.dataprovider.Createuser@4efc180e]" started-at="2022-05-06T11:21:00 IST" name="login" data-provider="credentails" finished-at="2022-05-06T11:21:39 IST" duration-ms="38963" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.sgtetsing.dataprovider.Createuser@4efc180e]" started-at="2022-05-06T11:21:39 IST" name="createuser" data-provider="users" finished-at="2022-05-06T11:22:12 IST" duration-ms="33120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[start]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[finish]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ambani@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Demo]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ssss]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[ssss]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createuser -->
+        <test-method signature="DeleteUser()[pri:5, instance:com.sgtetsing.dataprovider.Createuser@4efc180e]" started-at="2022-05-06T11:22:12 IST" name="DeleteUser" finished-at="2022-05-06T11:22:13 IST" duration-ms="1134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUser -->
+        <test-method signature="Logout()[pri:6, instance:com.sgtetsing.dataprovider.Createuser@4efc180e]" started-at="2022-05-06T11:22:13 IST" name="Logout" finished-at="2022-05-06T11:22:14 IST" duration-ms="1148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method signature="CloseApplication()[pri:7, instance:com.sgtetsing.dataprovider.Createuser@4efc180e]" started-at="2022-05-06T11:22:14 IST" name="CloseApplication" finished-at="2022-05-06T11:22:17 IST" duration-ms="3047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApplication -->
+      </class> <!-- com.sgtetsing.dataprovider.Createuser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

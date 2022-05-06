@@ -1,0 +1,374 @@
+<html>
+<head>
+<title>TestNG:  Create User</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Create User</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>59/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 24 13:02:55 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>200 seconds (200442 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.LoginLogout.navigate()'><b>navigate</b><br>Test class: com.sgtetsing.dataprovider.LoginLogout</td>
+<td></td>
+<td>6</td>
+<td>com.sgtetsing.dataprovider.LoginLogout@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.LoginLogout.login()'><b>login</b><br>Test class: com.sgtetsing.dataprovider.LoginLogout<br>Parameters: admin, manager</td>
+<td></td>
+<td>8</td>
+<td>com.sgtetsing.dataprovider.LoginLogout@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.CreateTask()'><b>CreateTask</b><br>Test class: com.sgtetsing.dataprovider.Scenario7<br>Parameters: Write test cases</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario5<br>Parameters: Infinite</td>
+<td></td>
+<td>8</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.LoginLogout.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtetsing.dataprovider.LoginLogout</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.LoginLogout@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario3.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario3@58695725</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.Login()'><b>Login</b><br>Test class: com.sgtetsing.dataprovider.Scenario7<br>Parameters: admin, manager</td>
+<td></td>
+<td>4</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario4.ModifyCustomer()'><b>ModifyCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario4<br>Parameters: It is Software developing company</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario4@543588e6</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.navigate()'><b>navigate</b><br>Test class: com.sgtetsing.dataprovider.Scenario5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.Login()'><b>Login</b><br>Test class: com.sgtetsing.dataprovider.Scenario5<br>Parameters: admin, manager</td>
+<td></td>
+<td>4</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtetsing.dataprovider.Scenario7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.CloseApplication()'><b>CloseApplication</b><br>Test class: com.sgtetsing.dataprovider.Scenario6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario4.CloseApplication()'><b>CloseApplication</b><br>Test class: com.sgtetsing.dataprovider.Scenario4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario4@543588e6</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario4.navigate()'><b>navigate</b><br>Test class: com.sgtetsing.dataprovider.Scenario4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario4@543588e6</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario2.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtetsing.dataprovider.Scenario2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario2@618425b5</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario2.CloseApplication()'><b>CloseApplication</b><br>Test class: com.sgtetsing.dataprovider.Scenario2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario2@618425b5</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.Logout()'><b>Logout</b><br>Test class: com.sgtetsing.dataprovider.Scenario7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario2.ModifyUser()'><b>ModifyUser</b><br>Test class: com.sgtetsing.dataprovider.Scenario2<br>Parameters: Sujeethkumar</td>
+<td></td>
+<td>5</td>
+<td>com.sgtetsing.dataprovider.Scenario2@618425b5</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtetsing.dataprovider.Scenario5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario4.Login()'><b>Login</b><br>Test class: com.sgtetsing.dataprovider.Scenario4<br>Parameters: admin, manager</td>
+<td></td>
+<td>4</td>
+<td>com.sgtetsing.dataprovider.Scenario4@543588e6</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtetsing.dataprovider.Scenario6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.LoginLogout.login()'><b>login</b><br>Test class: com.sgtetsing.dataprovider.LoginLogout<br>Parameters: admin, manager</td>
+<td></td>
+<td>9</td>
+<td>com.sgtetsing.dataprovider.LoginLogout@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario6<br>Parameters: Infinite</td>
+<td></td>
+<td>11</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario3.Logout()'><b>Logout</b><br>Test class: com.sgtetsing.dataprovider.Scenario3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario3@58695725</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario4.Logout()'><b>Logout</b><br>Test class: com.sgtetsing.dataprovider.Scenario4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario4@543588e6</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario3.navigate()'><b>navigate</b><br>Test class: com.sgtetsing.dataprovider.Scenario3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario3@58695725</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario2.CreateUser()'><b>CreateUser</b><br>Test class: com.sgtetsing.dataprovider.Scenario2<br>Parameters: Sujeeth, Kumar, sujeeth@gmail.com, Sujeethkumar, Welcome123, Welcome123</td>
+<td></td>
+<td>12</td>
+<td>com.sgtetsing.dataprovider.Scenario2@618425b5</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.navigate()'><b>navigate</b><br>Test class: com.sgtetsing.dataprovider.Scenario6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario2.Login()'><b>Login</b><br>Test class: com.sgtetsing.dataprovider.Scenario2<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtetsing.dataprovider.Scenario2@618425b5</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.CreatProject()'><b>CreatProject</b><br>Test class: com.sgtetsing.dataprovider.Scenario5<br>Parameters: Testing</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtetsing.dataprovider.Scenario6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.DeleteTask()'><b>DeleteTask</b><br>Test class: com.sgtetsing.dataprovider.Scenario7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario4.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario4@543588e6</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario7<br>Parameters: Infinite</td>
+<td></td>
+<td>8</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.Login()'><b>Login</b><br>Test class: com.sgtetsing.dataprovider.Scenario6<br>Parameters: admin, manager</td>
+<td></td>
+<td>4</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario4.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario4<br>Parameters: Infinite</td>
+<td></td>
+<td>9</td>
+<td>com.sgtetsing.dataprovider.Scenario4@543588e6</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.CreatProject()'><b>CreatProject</b><br>Test class: com.sgtetsing.dataprovider.Scenario6<br>Parameters: Testing</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario3.Login()'><b>Login</b><br>Test class: com.sgtetsing.dataprovider.Scenario3<br>Parameters: admin, manager</td>
+<td></td>
+<td>4</td>
+<td>com.sgtetsing.dataprovider.Scenario3@58695725</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario2.navigate()'><b>navigate</b><br>Test class: com.sgtetsing.dataprovider.Scenario2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtetsing.dataprovider.Scenario2@618425b5</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.LoginLogout.login()'><b>login</b><br>Test class: com.sgtetsing.dataprovider.LoginLogout<br>Parameters: admin, manager</td>
+<td></td>
+<td>8</td>
+<td>com.sgtetsing.dataprovider.LoginLogout@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtetsing.dataprovider.Scenario5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario4.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtetsing.dataprovider.Scenario4</td>
+<td></td>
+<td>3</td>
+<td>com.sgtetsing.dataprovider.Scenario4@543588e6</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.CloseApplication()'><b>CloseApplication</b><br>Test class: com.sgtetsing.dataprovider.Scenario7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario3.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtetsing.dataprovider.Scenario3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario3@58695725</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario2.Logout()'><b>Logout</b><br>Test class: com.sgtetsing.dataprovider.Scenario2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario2@618425b5</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario3.CloseApplication()'><b>CloseApplication</b><br>Test class: com.sgtetsing.dataprovider.Scenario3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario3@58695725</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.Logout()'><b>Logout</b><br>Test class: com.sgtetsing.dataprovider.Scenario6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.navigate()'><b>navigate</b><br>Test class: com.sgtetsing.dataprovider.Scenario7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario2.DeleteUser()'><b>DeleteUser</b><br>Test class: com.sgtetsing.dataprovider.Scenario2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtetsing.dataprovider.Scenario2@618425b5</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtetsing.dataprovider.Scenario7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario6.ModifyProject()'><b>ModifyProject</b><br>Test class: com.sgtetsing.dataprovider.Scenario6<br>Parameters: It is a software testing company</td>
+<td></td>
+<td>0</td>
+<td>com.sgtetsing.dataprovider.Scenario6@4fb3ee4e</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.LoginLogout.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtetsing.dataprovider.LoginLogout</td>
+<td></td>
+<td>3</td>
+<td>com.sgtetsing.dataprovider.LoginLogout@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario3.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtetsing.dataprovider.Scenario3<br>Parameters: Infinite</td>
+<td></td>
+<td>14</td>
+<td>com.sgtetsing.dataprovider.Scenario3@58695725</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario7.CreatProject()'><b>CreatProject</b><br>Test class: com.sgtetsing.dataprovider.Scenario7<br>Parameters: Testing</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario7@5d7148e2</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.CloseApplication()'><b>CloseApplication</b><br>Test class: com.sgtetsing.dataprovider.Scenario5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+<tr>
+<td title='com.sgtetsing.dataprovider.Scenario5.Logout()'><b>Logout</b><br>Test class: com.sgtetsing.dataprovider.Scenario5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtetsing.dataprovider.Scenario5@f5acb9d</td></tr>
+</table><p>
+</body>
+</html>
